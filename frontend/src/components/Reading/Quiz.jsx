@@ -6,7 +6,6 @@ export default function Quiz({ passage }) {
 
   let [index, setIndex] = useState(0);
   const [questions, setQuestions] = useState([]);
-  let [question,setQuestion]=useState(questions[index])
   let [lock, setLock] = useState(true);
   const [selected, setSelected] = useState('');
   const [result, setResult] = useState(null);
@@ -17,7 +16,6 @@ export default function Quiz({ passage }) {
       try {
         const data = await getPassageQuestions(passage.id);
         setQuestions(data);
-        setQuestion(data[index]);
       } catch (error) {
         console.error('không thể fetch passage:', error);
       }
@@ -27,6 +25,7 @@ export default function Quiz({ passage }) {
   if (!questions || questions.length === 0) {
     return <div>Chưa có câu hỏi cho passage này.</div>;
   }
+  const question=questions[index]
   const next = () => {
     if (index<=questions.length) {
       setIndex(++index);
