@@ -25,20 +25,27 @@ export default function Quiz({ passage }) {
   if (!questions || questions.length === 0) {
     return <div>Chưa có câu hỏi cho passage này.</div>;
   }
+
   const question=questions[index]
   const next = () => {
-    if (index<=questions.length) {
+    if (index<questions.length) {
       setIndex(++index);
+      question = questions[index];
       // setLock(false);
     }
-    question = questions[index];
+    else{
+       question = questions[index];
+    }
   }
   const prev = () => {
     if (index>0) {
       setIndex(--index);
+      question = questions[index];
       // setLock(false);
     }
-    question = questions[index];
+    else{
+       question = questions[index];
+    }
   }
 
   const checkAns=(e,ans)=>{
