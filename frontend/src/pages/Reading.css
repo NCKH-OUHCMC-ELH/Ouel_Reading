@@ -1,13 +1,18 @@
 .reading {
   display: flex;
-  gap: 30px; 
+  /* gap: 30px;  */
   align-items: flex-start;
   justify-content: center;
   width: 100%;
   padding: 20px;
 }
 
-.left, .right {
+.left{
+  width: 50%;     
+  box-sizing: border-box;
+}
+
+.right {
   width: 50%;     
   box-sizing: border-box;
 }

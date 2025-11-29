@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
-import Quiz from "./Quiz";
-import Passage from './Passage';
+import Quiz from "../components/Reading/Quiz";
+import Passage from '../components/Reading/Passage';
 import './Reading.css';
 
 function Reading() {

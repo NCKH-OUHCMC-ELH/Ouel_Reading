@@ -1,7 +1,7 @@
 .container{
-    width: 640px;
+    width: 50%;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 50px;
     background: white;
     color: #262626;
     display: flex;
@@ -46,11 +46,11 @@
     margin: auto;
     font-size: 18px;
 }
-.container .correct{
+.correct{
     background: #dffff2;
     border-color: #00d397;
 }
-.container .wrong{
+.wrong{
     background:  #ffebeb;
     border-color: #ff4a4a;
 }
