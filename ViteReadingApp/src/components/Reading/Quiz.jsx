@@ -136,7 +136,11 @@ export default function Quiz({ passage }) {
             <li ref={OptionC} onClick={(e) => checkAns(e, "C")}>{question.option_c}</li>
             <li ref={OptionD} onClick={(e) => checkAns(e, "D")}>{question.option_d}</li>
           </ul>
-
+          {lock && (
+            <div className="explanation">
+              Giải thích: {question.explanation}
+            </div>
+          )}
           <button onClick={prevn}>Prev</button>
           <button onClick={next}>Next</button>
 

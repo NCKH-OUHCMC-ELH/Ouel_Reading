@@ -1,19 +1,3 @@
-# Báo cáo 25/11/2015
-## Chạy project
-- mở git bash
-- chạy lệnh
-- chmod +x start.sh
-- ./start.sh
-
-## Điều đã làm
-- Giao diện đơn giản
-- UI đã gọi api được từ backend và lấy được dữ liệu được từ database
-  
-## Điều chưa làm
-- Chưa nghiên cứu gemini
-- Chưa xong một vài chức năn
-- Chưa chuyển css qua tailwind
-
 
 # Công cụ sử dụng
 
@@ -25,4 +9,3 @@ Django là framework back-end chính của hệ thống, chịu trách nhiệm x
 
 ## MySQL
 MySQL được sử dụng làm hệ quản trị cơ sở dữ liệu., tích hợp với Django thông qua ORM.
-
