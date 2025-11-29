@@ -68,3 +68,11 @@
   gap: 8px;
   font-size: 24px;
 }
+
+ul li.hidden {
+  display: none;
+}
+
+ul li:hover {
+  background-color: #f0f0f0;
+}
