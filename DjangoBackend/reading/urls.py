@@ -5,7 +5,7 @@ from reading import views
 router = DefaultRouter()
 router.register('passages', views.PassageViewSet, basename='passage')
 router.register('questions', views.QuestionViewSet, basename='question')
-
 urlpatterns = [
     path('', include(router.urls)),
+    path('gemini/highlight/', views.highlight_view),
 ]

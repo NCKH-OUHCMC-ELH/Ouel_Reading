@@ -1,6 +1,6 @@
 import React from 'react';
 import Passage from './components/Reading/Passage';
-import Reading from './pages/Reading';
+import Reading from './components/Reading/Reading.jsx';
 import './App.css';
 
 function App() {

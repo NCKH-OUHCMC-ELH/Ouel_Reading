@@ -8,20 +8,16 @@ const api = axios.create({
   timeout: 30000,
 });
 
-api.interceptors.request.use((config) => {
-  return config;
-});
 
 api.interceptors.response.use(
   (response) => response.data,
   (error) => Promise.reject(error)
 );
-
+export const getHighlights = (passage, question) => api.post('/gemini/highlight/', {passage, question});
 export const getPassages = () => api.get('/passages/');
 export const getPassage = (passageId) => api.get(`/passages/${passageId}/`);
 export const getPassageRandom = () => api.get(`/passages/random/`);
 export const getPassageQuestions = (passageId) => api.get(`/passages/${passageId}/questions/`);
-export const checkAnswer = (questionId, answer) =>
-  api.post(`/questions/${questionId}/check_answer/`, { answer });
+export const checkAnswer = (questionId, answer) => api.post(`/questions/${questionId}/check_answer/`, { answer });
 
 export default api;

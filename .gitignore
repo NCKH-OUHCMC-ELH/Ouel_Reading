@@ -135,6 +135,8 @@ celerybeat.pid
 *.sage.py
 
 # Environments
+*.env
+*/.env
 .env
 .envrc
 .venv
@@ -226,3 +228,15 @@ playground-temp
 temp
 TODOs.md
 .eslintcache
+
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
