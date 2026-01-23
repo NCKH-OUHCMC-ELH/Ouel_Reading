@@ -1,11 +1,14 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from reading import views
+from . import views
 
-router = DefaultRouter()
-router.register('passages', views.PassageViewSet, basename='passage')
-router.register('questions', views.QuestionViewSet, basename='question')
+r = DefaultRouter()
+r.register('parts', views.PartViewSet, basename='passage')
+r.register('questions', views.QuestionViewSet, basename='question')
+r.register('part-histories', views.PartHistoryViewSet, basename='part-history')
+r.register('geminis', views.GeminiViewSet, basename='gemini')
+
+
 urlpatterns = [
-    path('', include(router.urls)),
-    path('gemini/highlight/', views.highlight_view),
+    path('', include(r.urls)),
 ]

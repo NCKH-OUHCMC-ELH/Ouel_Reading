@@ -1,8 +1,5 @@
 import React from 'react';
-import Passage from './components/Reading/Passage';
-import Reading from './components/Reading/Reading.jsx';
-import './App.css';
-
+import Reading from './pages/Reading';
 function App() {
   return (
     <div className="App">

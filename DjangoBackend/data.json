@@ -1,6 +1,6 @@
 [
   {
-    "model": "reading.passage",
+    "model": "reading.part",
     "pk": 1,
     "fields": {
       "name": "Amazon Rainforest",
@@ -11,7 +11,7 @@
     "model": "reading.question",
     "pk": 1,
     "fields": {
-      "passage_id": 1,
+      "part_id": 1,
       "question_text": "Which river flows through the Amazon rainforest?",
       "option_a": "Nile",
       "option_b": "Amazon",
@@ -25,7 +25,7 @@
     "model": "reading.question",
     "pk": 2,
     "fields": {
-      "passage_id": 1,
+      "part_id": 1,
       "question_text": "Why is the Amazon called the 'lungs of the Earth'?",
       "option_a": "It absorbs CO2 and produces oxygen",
       "option_b": "It has many rivers",
@@ -39,7 +39,7 @@
     "model": "reading.question",
     "pk": 3,
     "fields": {
-      "passage_id": 1,
+      "part_id": 1,
       "question_text": "What is the main threat to the Amazon?",
       "option_a": "Tourism",
       "option_b": "Deforestation",
@@ -53,7 +53,7 @@
     "model": "reading.question",
     "pk": 4,
     "fields": {
-      "passage_id": 1,
+      "part_id": 1,
       "question_text": "How many countries does the Amazon span?",
       "option_a": "5",
       "option_b": "7",
@@ -67,7 +67,7 @@
     "model": "reading.question",
     "pk": 5,
     "fields": {
-      "passage_id": 1,
+      "part_id": 1,
       "question_text": "What is one ecological function of the Amazon?",
       "option_a": "Regulates climate",
       "option_b": "Reduces rainfall",
@@ -81,7 +81,7 @@
     "model": "reading.question",
     "pk": 6,
     "fields": {
-      "passage_id": 1,
+      "part_id": 1,
       "question_text": "Why are medicinal plants important in the Amazon?",
       "option_a": "They provide food for animals",
       "option_b": "They support indigenous medicine",
@@ -95,7 +95,7 @@
     "model": "reading.question",
     "pk": 7,
     "fields": {
-      "passage_id": 1,
+      "part_id": 1,
       "question_text": "What role do rivers in the Amazon play?",
       "option_a": "Transportation and habitat",
       "option_b": "Producing oxygen",
@@ -109,7 +109,7 @@
     "model": "reading.question",
     "pk": 8,
     "fields": {
-      "passage_id": 1,
+      "part_id": 1,
       "question_text": "Why is soil in the Amazon fragile?",
       "option_a": "Because it is sandy",
       "option_b": "Because it is overused",
@@ -123,7 +123,7 @@
     "model": "reading.question",
     "pk": 9,
     "fields": {
-      "passage_id": 1,
+      "part_id": 1,
       "question_text": "Why are conservation efforts necessary?",
       "option_a": "To promote tourism",
       "option_b": "To protect biodiversity",
@@ -137,7 +137,7 @@
     "model": "reading.question",
     "pk": 10,
     "fields": {
-      "passage_id": 1,
+      "part_id": 1,
       "question_text": "What is one consequence of deforestation?",
       "option_a": "Loss of habitats",
       "option_b": "More oxygen",
@@ -148,7 +148,7 @@
     }
   },
   {
-    "model": "reading.passage",
+    "model": "reading.part",
     "pk": 2,
     "fields": {
       "name": "Solar System",
@@ -159,7 +159,7 @@
     "model": "reading.question",
     "pk": 11,
     "fields": {
-      "passage_id": 2,
+      "part_id": 2,
       "question_text": "Which planet is closest to the Sun?",
       "option_a": "Earth",
       "option_b": "Mercury",
@@ -173,7 +173,7 @@
     "model": "reading.question",
     "pk": 12,
     "fields": {
-      "passage_id": 2,
+      "part_id": 2,
       "question_text": "Why is Venus hotter than Mercury in some areas?",
       "option_a": "It is closer to the Sun",
       "option_b": "Thick toxic atmosphere traps heat",
@@ -187,7 +187,7 @@
     "model": "reading.question",
     "pk": 13,
     "fields": {
-      "passage_id": 2,
+      "part_id": 2,
       "question_text": "Which planet is known as the Red Planet?",
       "option_a": "Mars",
       "option_b": "Jupiter",
@@ -201,7 +201,7 @@
     "model": "reading.question",
     "pk": 14,
     "fields": {
-      "passage_id": 2,
+      "part_id": 2,
       "question_text": "Which planet has the largest size?",
       "option_a": "Earth",
       "option_b": "Jupiter",
@@ -215,7 +215,7 @@
     "model": "reading.question",
     "pk": 15,
     "fields": {
-      "passage_id": 2,
+      "part_id": 2,
       "question_text": "What lies between Mars and Jupiter?",
       "option_a": "Oort Cloud",
       "option_b": "Kuiper Belt",
@@ -229,7 +229,7 @@
     "model": "reading.question",
     "pk": 16,
     "fields": {
-      "passage_id": 2,
+      "part_id": 2,
       "question_text": "Why does the Sun's gravity matter?",
       "option_a": "It produces solar flares",
       "option_b": "It keeps planets in orbit",
@@ -243,7 +243,7 @@
     "model": "reading.question",
     "pk": 17,
     "fields": {
-      "passage_id": 2,
+      "part_id": 2,
       "question_text": "Which planet rotates on its side?",
       "option_a": "Uranus",
       "option_b": "Saturn",
@@ -257,7 +257,7 @@
     "model": "reading.question",
     "pk": 18,
     "fields": {
-      "passage_id": 2,
+      "part_id": 2,
       "question_text": "Which planets are gas giants?",
       "option_a": "Jupiter and Saturn",
       "option_b": "Mercury and Venus",
@@ -271,7 +271,7 @@
     "model": "reading.question",
     "pk": 19,
     "fields": {
-      "passage_id": 2,
+      "part_id": 2,
       "question_text": "Where are dwarf planets like Pluto found?",
       "option_a": "Asteroid Belt",
       "option_b": "Oort Cloud",
@@ -285,7 +285,7 @@
     "model": "reading.question",
     "pk": 20,
     "fields": {
-      "passage_id": 2,
+      "part_id": 2,
       "question_text": "Why is Earth able to support diverse life forms?",
       "option_a": "It has a moderate climate and water",
       "option_b": "It rotates quickly",
@@ -296,7 +296,7 @@
     }
   },
   {
-    "model": "reading.passage",
+    "model": "reading.part",
     "pk": 3,
     "fields": {
       "name": "Oceans",
@@ -307,7 +307,7 @@
     "model": "reading.question",
     "pk": 21,
     "fields": {
-      "passage_id": 3,
+      "part_id": 3,
       "question_text": "What percentage of Earth's surface is covered by oceans?",
       "option_a": "50%",
       "option_b": "60%",
@@ -321,7 +321,7 @@
     "model": "reading.question",
     "pk": 22,
     "fields": {
-      "passage_id": 3,
+      "part_id": 3,
       "question_text": "What causes tides?",
       "option_a": "Sun's rotation",
       "option_b": "Moon's gravity",
@@ -335,7 +335,7 @@
     "model": "reading.question",
     "pk": 23,
     "fields": {
-      "passage_id": 3,
+      "part_id": 3,
       "question_text": "Why are coral reefs important?",
       "option_a": "They provide oxygen",
       "option_b": "They are tourist attractions",
@@ -349,7 +349,7 @@
     "model": "reading.question",
     "pk": 24,
     "fields": {
-      "passage_id": 3,
+      "part_id": 3,
       "question_text": "How do oceans help regulate climate?",
       "option_a": "By storing and moving heat",
       "option_b": "By absorbing sunlight",
@@ -363,7 +363,7 @@
     "model": "reading.question",
     "pk": 25,
     "fields": {
-      "passage_id": 3,
+      "part_id": 3,
       "question_text": "What threatens marine life?",
       "option_a": "Volcanoes",
       "option_b": "Overfishing",
@@ -377,7 +377,7 @@
     "model": "reading.question",
     "pk": 26,
     "fields": {
-      "passage_id": 3,
+      "part_id": 3,
       "question_text": "Why are phytoplankton important?",
       "option_a": "They produce oxygen",
       "option_b": "They produce carbon dioxide",
@@ -391,7 +391,7 @@
     "model": "reading.question",
     "pk": 27,
     "fields": {
-      "passage_id": 3,
+      "part_id": 3,
       "question_text": "What effect do oil spills have?",
       "option_a": "Improve water quality",
       "option_b": "Harm marine life",
@@ -405,7 +405,7 @@
     "model": "reading.question",
     "pk": 28,
     "fields": {
-      "passage_id": 3,
+      "part_id": 3,
       "question_text": "Why are deep oceans significant?",
       "option_a": "They are fully explored",
       "option_b": "They host unique organisms",
@@ -419,7 +419,7 @@
     "model": "reading.question",
     "pk": 29,
     "fields": {
-      "passage_id": 3,
+      "part_id": 3,
       "question_text": "How do mangroves protect coastlines?",
       "option_a": "By absorbing heat",
       "option_b": "By acting as barriers against waves",
@@ -433,7 +433,7 @@
     "model": "reading.question",
     "pk": 30,
     "fields": {
-      "passage_id": 3,
+      "part_id": 3,
       "question_text": "Why is ocean conservation important?",
       "option_a": "To support human survival and ecosystems",
       "option_b": "To build ships",
@@ -444,7 +444,7 @@
     }
   },
   {
-    "model": "reading.passage",
+    "model": "reading.part",
     "pk": 4,
     "fields": {
       "name": "Space Exploration",
@@ -455,7 +455,7 @@
     "model": "reading.question",
     "pk": 31,
     "fields": {
-      "passage_id": 4,
+      "part_id": 4,
       "question_text": "What enables humans to travel beyond Earth?",
       "option_a": "Satellites",
       "option_b": "Telescopes",
@@ -469,7 +469,7 @@
     "model": "reading.question",
     "pk": 32,
     "fields": {
-      "passage_id": 4,
+      "part_id": 4,
       "question_text": "What is the function of satellites?",
       "option_a": "Weather monitoring, communication, navigation",
       "option_b": "Producing oxygen",
@@ -483,7 +483,7 @@
     "model": "reading.question",
     "pk": 33,
     "fields": {
-      "passage_id": 4,
+      "part_id": 4,
       "question_text": "What is the ISS used for?",
       "option_a": "Traveling to Mars",
       "option_b": "Microgravity research",
@@ -497,7 +497,7 @@
     "model": "reading.question",
     "pk": 34,
     "fields": {
-      "passage_id": 4,
+      "part_id": 4,
       "question_text": "Why do space probes explore other planets?",
       "option_a": "To send humans immediately",
       "option_b": "To gather scientific data",
@@ -511,7 +511,7 @@
     "model": "reading.question",
     "pk": 35,
     "fields": {
-      "passage_id": 4,
+      "part_id": 4,
       "question_text": "How do telescopes help in space exploration?",
       "option_a": "They propel rockets",
       "option_b": "They observe distant celestial objects",
@@ -525,7 +525,7 @@
     "model": "reading.question",
     "pk": 36,
     "fields": {
-      "passage_id": 4,
+      "part_id": 4,
       "question_text": "Why do private companies enter space travel?",
       "option_a": "To build roads",
       "option_b": "For commercial and scientific purposes",
@@ -539,7 +539,7 @@
     "model": "reading.question",
     "pk": 37,
     "fields": {
-      "passage_id": 4,
+      "part_id": 4,
       "question_text": "What hazard does space debris pose?",
       "option_a": "Pollutes oceans",
       "option_b": "Collisions with spacecraft",
@@ -553,7 +553,7 @@
     "model": "reading.question",
     "pk": 38,
     "fields": {
-      "passage_id": 4,
+      "part_id": 4,
       "question_text": "Why is observing asteroids important?",
       "option_a": "To prevent collisions with Earth",
       "option_b": "To produce energy",
@@ -567,7 +567,7 @@
     "model": "reading.question",
     "pk": 39,
     "fields": {
-      "passage_id": 4,
+      "part_id": 4,
       "question_text": "Why is international cooperation important in space?",
       "option_a": "To share resources and knowledge",
       "option_b": "To launch private companies",
