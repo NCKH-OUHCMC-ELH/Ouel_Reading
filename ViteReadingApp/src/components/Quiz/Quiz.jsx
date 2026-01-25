@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ArrowLeftIcon, ArrowRightIcon } from "lucide-react";
+// import { useNavigate } from "react-router-dom";
 // import './Quiz.css';
 import api, { endpoints } from "../../utils/api.js";
 import { Card, CardContent, CardTitle, CardHeader, CardDescription, CardAction, CardFooter } from "@/components/ui/card";
@@ -14,7 +15,8 @@ import {
 } from "@/components/ui/sheet"
 import Passage from './Passage.jsx';
 
-export default function Quiz({ passage, questions, question, setQuestion,index,setIndex }) {
+export default function Quiz({ passage, questions, question, setQuestion,index,setIndex,setPartHistory }) {
+  // const navigate = useNavigate();
   const [complete, setComplete] = useState(false);
   const [userAnswers, setUserAnswers] = useState({});
   const [score, setScore] = useState(0);
@@ -135,6 +137,8 @@ export default function Quiz({ passage, questions, question, setQuestion,index,s
     try {
       const res = await api.post(endpoints['submitQuiz'], payload);
       console.log("Saved quiz:", res.data);
+      // navigate("/ResultQuiz",{partHistory:res.data});
+      setPartHistory(res.data)
     } catch (err) {
       console.error("Save quiz error:", err);
     }
@@ -214,7 +218,7 @@ export default function Quiz({ passage, questions, question, setQuestion,index,s
                                   key={idx}
                                   onClick={() => { setQuestion(questions[idx]); setResult(false); setIndex(idx) }}
                                   className={`w-10 h-10 flex items-center justify-center rounded-full border 
-                        ${answered ? 'bg-green-500 text-white' : 'bg-gray-200'}`}
+                                    ${answered ? 'bg-green-500 text-white' : 'bg-gray-200'}`}
                                 >
                                   {idx + 1}
                                 </Button>

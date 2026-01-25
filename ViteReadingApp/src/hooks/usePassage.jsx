@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getHighlights } from "../services/passageService";
+import { Highlights } from "../services/serviceHighlights";
 
 export function usePassage(passage, question, lockAi,setLockAi,index) {
     const [highlightedContent, setHighlightedContent] = useState(null);

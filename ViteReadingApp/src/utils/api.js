@@ -9,7 +9,8 @@ export const endpoints = {
     'getPartRandom': '/parts/random/',
     'getPartQuestions': (partId) => `/parts/${partId}/questions/`,
     'checkAnswer': (questionId) => `/questions/${questionId}/check_answer/`,
-    'submitQuiz': '/part-histories/submit/'
+    'submitQuiz': '/part-histories/submit/',
+    'getPartByType':'/parts/type/'
 };
 
 export default axios.create({

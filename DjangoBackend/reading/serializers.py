@@ -1,10 +1,10 @@
 from rest_framework import serializers
 from . import models
 
-# class TagSerializer(serializers.Serializer):
-#     class Meta:
-#         model = models.Tag
-#         fields = '__all__'
+class TagSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Tag
+        fields = '__all__'
 
 # class TagExamSerializer(serializers.Serializer):
 #     class Meta:
@@ -33,10 +33,12 @@ class QuestionSerializer(serializers.ModelSerializer):
 
 class PartSerializer(serializers.ModelSerializer):
     # questions = QuestionSerializer(many=True, read_only=True)
+    question_count = serializers.IntegerField(read_only=True)
+    tag = TagSerializer(many=True, read_only=True) 
 
     class Meta:
         model = models.Part
-        fields = '__all__'
+        fields = ['id','content','exam', 'exam_id','image', 'name', 'tag', 'tag_parts', 'type_part', 'question_count']
 
 class UserAnswerSerializer(serializers.ModelSerializer):
     class Meta:

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { fetchReadingData } from "../services/readingService";
+import { partData } from "../services/servicePartData";
 
-export function useReading() {
+export function useReading(part,type) {
     const [passage, setPassage] = useState(null);
     const [questions, setQuestions] = useState([]);
     const [currentQuestion, setCurrentQuestion] = useState(null);
@@ -10,7 +10,7 @@ export function useReading() {
     useEffect(() => {
         const loadData = async () => {
             try {
-                const { passage, questions } = await fetchReadingData();
+                const { passage, questions } = await partData(part,type);
                 setPassage(passage);
                 setQuestions(questions);
                 setCurrentQuestion(questions[0]);

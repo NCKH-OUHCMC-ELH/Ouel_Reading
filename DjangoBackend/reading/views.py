@@ -20,10 +20,25 @@ class PartViewSet(viewsets.ModelViewSet):
         questions = selectors.get_questions_by_part(part)
         return Response(serializers.QuestionSerializer(questions, many=True).data, status=status.HTTP_200_OK)
 
-    @action(methods=['get'], url_name='random', detail=False)
+    @action(methods=['post'], url_name='random', detail=False)
     def random(self, request):
-        part = selectors.get_random_part()
+        print(request.data)
+        if request.data:
+            part = selectors.get_random_part_type(request.data['type'])
+        else :
+            part = selectors.get_random_part()
         return Response(serializers.PartSerializer(part).data, status=status.HTTP_200_OK)
+    
+    @action(methods=['post'], url_name='type', detail=False)
+    def type(self, request):
+        try:
+            part = selectors.get_type_parts(request.data['type'])
+            return Response(serializers.PartSerializer(part,many=True).data, status=status.HTTP_200_OK)
+        except ValueError as e:
+            return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+        except Exception as ex:
+            print(ex)
+            return Response({"error": "Internal Server Error"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
     
 
 class QuestionViewSet(viewsets.ModelViewSet):

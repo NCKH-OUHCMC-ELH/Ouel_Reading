@@ -2,7 +2,7 @@ from django.db import models
 from cloudinary.models import CloudinaryField
 
 class PartType(models.TextChoices):
-    complete_the_sentence='complete the sentence'
+    complete_the_sentence='complete_the_sentence'
     complete_the_paragraph='complete_the_paragraph'
     reading_comprehension='reading_comprehension'
 
@@ -52,7 +52,7 @@ class Part(BaseModel):
     image = CloudinaryField(null=True, blank=True)
     type_part=models.CharField(max_length=100,choices=PartType.choices,default=PartType.reading_comprehension)
     exam=models.ForeignKey(Exam,on_delete=models.CASCADE,null=True,blank=True)
-    tag_parts = models.ManyToManyField(TagPart, blank=True)
+    tag_parts = models.ForeignKey(TagPart,on_delete=models.CASCADE,null=True,blank=True)
     tag=models.ManyToManyField(Tag, blank=True)
     def __str__(self):
         return self.name
