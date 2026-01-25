@@ -13,7 +13,8 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 from pathlib import Path
 import cloudinary.api,os
 from dotenv import load_dotenv
-
+import pymysql
+pymysql.install_as_MySQLdb()
 
 
 

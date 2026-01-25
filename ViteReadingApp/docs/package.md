@@ -1,62 +1,34 @@
-1. Các gói liên quan đến cấu hình
-   + asgiref==3.11.0
-   + Django==6.0.1
-   + sqlparse==0.5.5
-   + tzdata==2025.3
-   + djecrety==1.0.17
-   + python-dotenv==1.2.1
-   + packaging==25.0
+1. Các gói liên quan đến React:
+   + react==19.2.3
+   + react-dom==19.2.3
+   + react-router-dom==7.12.0
+   + lucide-react==0.562.0
 
-2. Các gói liên quan đến database 
-   + Pymysql==1.1.2
-   + mysqlclient==2.2.7
+2. Các gói liên quan đến build tool:
+   + vite==7.3.1
+   + @vitejs/plugin-react==5.1.2
+   + @tailwindcss/vite==4.1.18
 
-3. Các gói liên quan đến xử lý hình ảnh:
-   + cloudinary==1.44.1
-   + certifi==2026.1.4
-   + six==1.17.0
-   + urllib3==2.6.3
+3. Các gói liên quan đến UI component (shadcn/ui, Radix UI):
+   + @radix-ui/react-dialog==1.1.15
+   + @radix-ui/react-separator==1.1.8
+   + @radix-ui/react-slot==1.2.4
+   + @radix-ui/react-tabs==1.1.13
+   + @radix-ui/react-tooltip==1.2.8
     
-4. Các gói quản lý và kiểm soát API:
-   + django-debug-toolbar==6.1.0
-   + djangorestframework==3.16.1
-   + drf-yasg==1.21.14
-   + inflection==0.5.1
-   + packaging==25.0
-   + pytz==2025.2
-   + pyyaml==6.0.3
-   + uritemplate==4.2.
+4. Các gói liên quan đến styling và quản lý CSS:
+   + tailwindcss==4.1.18
+   + tailwind-merge==3.4.0
+   + clsx==2.1.1
+   + class-variance-authority==0.7.1
+   + tw-animate-css==1.4.0
 
-5. Các gói cấu hình production:
-   + django-cors-headers==4.9.0
+5. Các gói liên quan đến API:
+   + axios==1.13.2
 
-6. Gói liên quan đến cấu hình oauth2:
-   + cffi==2.0.0
-   + charset_normalizer==3.4.4
-   + cryptography==46.0.3
-   + django-oauth-toolkit==3.2.0
-   + idna==3.11
-   + jwcrypto==1.5.6
-   + oauthlib==3.3.1
-   + pycparser==2.23
-   + requests==2.32.5
-   + typing-extensions==4.15.0
-
-7. Các gói google-genai:
-   + annotated-types-0.7.0
-   + anyio-4.12.1
-   + distro-1.9.0
-   + google-auth-2.47.0
-   + google-genai-1.59.0
-   + h11-0.16.0
-   + httpcore-1.0.9
-   + httpx-0.28.1
-   + pyasn1-0.6.2
-   + pyasn1-modules-0.4.2
-   + pydantic-2.12.5
-   + pydantic-core-2.41.5
-   + rsa-4.9.1
-   + sniffio-1.3.1
-   + tenacity-9.1.2
-   + typing-inspection-0.4.2
-   + websockets-15.0.1   
+6. Các gói liên quan đến kiểm tra chất lượng mã nguồn (Linting):
+   + eslint==9.39.2
+   + @eslint/js==9.39.2
+   + eslint-plugin-react-hooks==7.0.1
+   + eslint-plugin-react-refresh==0.4.26
+   + globals==16.5.0
